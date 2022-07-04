@@ -12,5 +12,145 @@
       type="image/x-icon"
     />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h2>Cascade Gossip</h2>
+    </header>
+    <main>
+      <div class="blog-container">
+        <div class="blog-header">
+          <h1><span>CSS Flexbox</span> Ultimate Guide</h1>
+          <p>by <span>Ayesha Siddika</span></p>
+          <p>
+            Published: <span>4<sup>th</sup> July 2022</span>
+          </p>
+          <p id="sticker">CSS</p>
+        </div>
+        <div class="blog-cover">
+          <img
+            src="https://i.morioh.com/200827/6b167dc9.webp"
+            alt="CSS Flexbox Cover"
+          />
+        </div>
+        <div class="blog-body">
+          <p>
+            Laying out elements in CSS is something that used to be pretty
+            difficult to do. We were forced to use annoying hacks like floating
+            elements with clearfixes, but then flexbox was created. Flexbox
+            revolutionized CSS layouts and is by far one of the most defining
+            features of CSS to come out in the last 10 years. In this article I
+            will teach you exactly what flexbox is, how you can use it, and all
+            the advanced nuances you need to understand.
+          </p>
+          <h2>What Is Flexbox?</h2>
+          <p>
+            Flexbox is a way to layout elements in CSS and is broken into a two
+            main components. The flexbox container and flexbox items. The
+            flexbox container is the parent element that contains all the
+            flexbox items as its children. The flexbox container is where you
+            define all your properties about the flexbox layout and then on the
+            individual items you can make additional tweaks. Let's take a look
+            at how we would get started with a simple flexbox example. If we
+            have an element with children inside of it all we need to do is set
+            the display property of the parent element to flex and we will have
+            a flex container. <span class="code">display: flex</span>
+          </p>
+          <p>
+            As you can see by default when we specify a display of flex on an
+            element we are setting that element as the flex container. All the
+            direct children in that element are then considered flex items. By
+            default if you specify no other properties the flex items will lay
+            themselves out on one line from left to right taking up only as much
+            space as they need. Items will also automatically shrink down to fit
+            within the flex container if they would normally overflow.
+          </p>
+          <p>
+            Now this is the absolute basics of flexbox and on its own isn't
+            really useful so next we need to talk about how to handle the layout
+            of items in the container.
+          </p>
+          <h2>Flexbox Layout</h2>
+          <p>
+            Flexbox was the first CSS layout method that worked in a completely
+            different way than normal CSS. Instead of worrying about
+            block/inline elements flexbox worries about a main axis and a cross
+            axis.
+          </p>
+          <p>
+            By default the main axis (shown in green) goes horizontally across
+            the container and the cross axis goes vertically. This means that
+            any layout method that deals with the main axis will layout elements
+            horizontally while the cross axis will layout elements vertically.
+            Let's look at how we can layout elements along the main axis first.
+          </p>
+          <h2>Flex Item Layout</h2>
+          <p>
+            So far everything we have covered has had to deal with the layout of
+            the entire flex container. We can actually take this a step further,
+            though, and have specific layouts for each item in the flex
+            container. This is done via the
+            <span class="code">align-self</span> property.
+          </p>
+          <h2>Sizing Flex Items</h2>
+          <p>
+            Now we come to what is probably the most confusing part of flexbox
+            which is sizing the individual items, but I promise you I will make
+            it as easy as possible to understand.
+          </p>
+          <p>
+            The real power of flexbox is not in its layout properties (even
+            though, those are amazing), but in its ability to resize items based
+            on the size of other elements on your page. This is done via 3
+            different properties <span class="code">flex-grow</span>,
+            <span class="code">flex-shrink</span>, and
+            <span class="code">flex-basis</span>. First I want to talk about
+            <span class="code">flex-grow</span> since it is the most common
+            property you will use.
+          </p>
+          <h2>Flex Wrapping</h2>
+          <p>
+            When you are working in flexbox you are usually working with just
+            one line of items, but sometimes in rare occasions you may want to
+            handle wrapping when you have more items than you can fit on one
+            line.
+          </p>
+          <p>
+            Since our items have a width of 50% normally they would shrink to
+            ensure they all fit on one line, but we set the
+            <span class="code">flex-wrap</span> property to
+            <span class="code">wrap</span> which means that if an item would
+            overflow the container it is instead put on a new line. This is fine
+            if you are using wrap to ensure that even if your list of items
+            grows to be too large they still will look good, but if you are
+            using wrapping to create a two dimensional layout you are using
+            flexbox wrong. Instead you should look towards using CSS grid. You
+            can check out my
+            <a
+              class="link"
+              href="https://www.youtube.com/watch?v=9zBsdzdE4sM&feature=youtu.be"
+              target="_blank"
+              >CSS grid tutorial video</a
+            >
+            for more information on CSS grid.
+          </p>
+          <h2>Conclusion</h2>
+          <p>
+            And finally we come to the end of the ultimate guide to flexbox. I
+            know this was a ton of information to cover, but hopefully at least
+            some of it stuck. I know it is impossible to memorize all this at
+            once, but you can continually come back to this article for quick
+            refreshers on what each property does. I also am planning to create
+            a cheat sheet soon that will cover all flexbox properties/values
+            with nice drawings to go along with them. If that is something you
+            are interested in make sure you sign up for my newsletter at the top
+            of the page to be notified when I finish the cheat sheet.
+          </p>
+          <a href="#" id="share">Share</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &copy;2022 Cascade Gossip.</p>
+    </footer>
+  </body>
 </html>
